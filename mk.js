@@ -276,7 +276,7 @@ bot.on("ready", function() {
 	console.log("ready");
 	
 	bot.user.setStatus("Online");
-	bot.user.setGame("To Get Help | 1help");
+	bot.user.setGame("To Get Help | 2help");
 });
 bot.on('message', message => {
 if (message.content === prefix +'help') {
@@ -284,29 +284,29 @@ if (message.content === prefix +'help') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
 	.setDescription (`
-#User "1userinfo [username or blank]": displays info for the selected user or for message sender if arguments are not provided
+#User "2userinfo [username or blank]": displays info for the selected user or for message sender if arguments are not provided
 
-#Music "1play [song name or blank]": plays a song or if arguments are not provided plays the first song in the queue
+#Music "2play [song name or blank]": plays a song or if arguments are not provided plays the first song in the queue
 
-"1skip": skips the current song
+"2skip": skips the current song
 
-"1queue": displays current queue
+"2queue": displays current queue
 
-"1queue remove [song number]": removes chosen song from the queue
+"2queue remove [song number]": removes chosen song from the queue
 
-"1queue clear": removes all songs from the queue
+"2queue clear": removes all songs from the queue
 
-"1queue shuffle": shuffles the current queue
+"2queue shuffle": shuffles the current queue
 
-"1repeat": plays current song again
+"2repeat": plays current song again
 
-"1stop": stops playing music and deletes all songs in the queue
+"2stop": stops playing music and deletes all songs in the queue
 
-"1yt [search term]": searches the YouTube and returns first 5 results
+"2yt [search term]": searches the YouTube and returns first 5 results
 
-"1add [search result number]": adds a song from YouTube search to the queue
+"2add [search result number]": adds a song from YouTube search to the queue
 
-"1vol [percentage]": sets the volume of the music to given percentage
+"2vol [percentage]": sets the volume of the music to given percentage
 
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
 `)
